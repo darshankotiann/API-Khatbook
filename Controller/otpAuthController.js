@@ -1,5 +1,5 @@
 require('dotenv').config();
-import { twilio } from "twilio"
+const twilio= require("twilio");
 const generateOtpController = async(req, res) => {
     try {
         const mobileNo = req.body.mobileNo;
